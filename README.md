@@ -44,7 +44,7 @@ Run "sail artisan passport:client --personal"
 ### Postman
 
 ```
-Postman Link on google drive
+Exported Postman Json on google drive
 
 https://drive.google.com/file/d/1b4usIg-MJ9-uuT2m8JsnEQ49lu9MPcS6/view?usp=drive_link
 ```
