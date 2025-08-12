@@ -120,7 +120,7 @@ class UserService
     /**
      * @param User|Authenticatable $user
      * @param int $user_id
-     * @param int $todo_list
+     * @param int $todo_list_id
      * @return GenericServiceResponse
      */
     public function handleAddUserToATodoList(User|Authenticatable $user, int $user_id, int $todo_list_id): GenericServiceResponse
