@@ -3,18 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\TodoListRequest;
-use App\Http\Requests\UserRequest;
-use App\Jobs\PerformKYCVerificationJob;
-use App\Models\User;
-use App\Models\UserProfile;
 use App\Services\TodoListService;
-use App\Services\UserService;
-use App\Utils\CloudinaryService;
 use App\Utils\JsonResponseAPI;
-use CloudinaryLabs\CloudinaryLaravel\Facades\Cloudinary;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Log;
 
 class TodoListController extends Controller

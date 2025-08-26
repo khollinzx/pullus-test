@@ -2,28 +2,11 @@
 
 namespace App\Services;
 
-use App\Abstractions\Implementations\ThirdParties\AnchorService;
-use App\Abstractions\Implementations\ThirdParties\DojahService;
-use App\Abstractions\Implementations\ThirdParties\PaystackService;
 use App\Enums\ServiceResponseMessage;
-use App\Events\BroadcastUserNotification;
-use App\Jobs\CreateCustomerDetailJob;
-use App\Jobs\FetchCustomerDetailJob;
-use App\Jobs\PerformKYCVerificationJob;
-use App\Jobs\SetUpUserDepositAccountJob;
-use App\Jobs\SetUpUserEscrowAccountJob;
-use App\Jobs\VerifyCustomerDetailJob;
-use App\Models\Country;
 use App\Models\OauthAccessToken;
-use App\Models\ThirdPartyProvider;
 use App\Models\TodoList;
 use App\Models\TodoListMember;
 use App\Models\User;
-use App\Models\UserBankAccount;
-use App\Models\UserNotification;
-use App\Models\UserProfile;
-use App\Utils\CloudinaryService;
-use App\Utils\Constants;
 use App\Utils\GenericServiceResponse;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Http\Request;

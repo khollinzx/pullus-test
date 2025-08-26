@@ -4,20 +4,10 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\OnBoardRequest;
-use App\Mail\SendMailNotification;
-use App\Models\Bank;
-use App\Models\Country;
-use App\Models\Gender;
-use App\Models\OauthAccessToken;
-use App\Models\State;
-use App\Models\User;
 use App\Services\UserService;
 use App\Utils\JsonResponseAPI;
 use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\Mail;
 
 class UserOnboardController extends Controller
 {

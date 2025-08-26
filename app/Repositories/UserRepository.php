@@ -4,8 +4,6 @@ namespace App\Repositories;
 
 use App\Abstractions\AbstractClasses\BaseRepositoryAbstract;
 use App\Models\User;
-use App\Utils\Utils;
-use Illuminate\Support\Facades\Log;
 
 class UserRepository extends BaseRepositoryAbstract
 {
