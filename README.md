@@ -48,3 +48,10 @@ Exported Postman Json on google drive
 
 https://drive.google.com/file/d/1b4usIg-MJ9-uuT2m8JsnEQ49lu9MPcS6/view?usp=drive_link
 ```
+### Schema Diagram
+
+```
+Link to database design.
+
+https://dbdiagram.io/d/Todo-List-Pullus-Africa-Test-68ad67b61e7a6119679ced25
+```
