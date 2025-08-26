@@ -555,19 +555,19 @@ abstract class BaseRepositoryAbstract implements RepositoryInterface
     }
 
     /**
-     * @param string $query
+     * @param string|null $key
      * @return array
      */
-    public function searchByAttributes(string $query = null): array
+    public function searchByAttributes(string $key = null): array
     {
         try {
             $data = [];
-            if (is_null($query))
+            if (is_null($key))
                 $records = $this->model::with($this->model->relationships)->sharedLock()->get();
             else $records = $this->model::with($this->model->relationships)
                 ->join('genres', 'genres.id', '=', 'comics.genre_id')
-                ->where('comics.title', 'like', "%$query%")
-                ->orWhere('genres.name', 'like', "%$query%")
+                ->where('comics.title', 'like', "%$key%")
+                ->orWhere('genres.name', 'like', "%$key%")
                 ->sharedLock()->get();
             if (count($records)) {
                 collect($records)->each( function ($record) use (&$data) {

@@ -82,7 +82,7 @@ class UserService
     public function handleSearchUserByUsername(User|Authenticatable $user, Request $request): GenericServiceResponse
     {
         try {
-            $search = is_null($request->get('query')) ? ' ' : $request->get('query', ' ');
+            $search = is_null($request->get('search')) ? ' ' : $request->get('search', ' ');
             $users = User::repo()->querySearch($search, ['username', 'name']);
             if($users->count() == 0) {
                 $this->response->message = ServiceResponseMessage::CAN_NOT_RETRIEVE_RECORD;

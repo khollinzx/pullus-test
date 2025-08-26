@@ -283,10 +283,10 @@ interface RepositoryInterface
     public function queryModelByAttributes(string $key, string $action, array $statuses, array $dates): array;
 
     /**
-     * @param string $key
+     * @param string|null $key
      * @return array
      */
-    public function searchByAttributes(string $key): array;
+    public function searchByAttributes(string $key = null): array;
 
     /**
      * @param string $key

@@ -71,9 +71,8 @@ class OauthAccessToken extends Model
         self::deleteUserAccessToken($model->id, $guard);
         $accessToken = $model->createToken('accessToken')->accessToken;
         self::addGuard($accessToken, $model, $guard);
-        $response_object['userType'] = $guard;
-        $response_object['accessToken'] = $accessToken;
-        $response_object['profile'] = $model;
+        $response_object['token'] = $accessToken;
+        $response_object['user'] = $model;
         return $response_object;
     }
 
