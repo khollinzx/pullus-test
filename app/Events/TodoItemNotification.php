@@ -29,7 +29,7 @@ class TodoItemNotification implements ShouldBroadcast
     public function broadcastOn(): array
     {
         return [
-            new PrivateChannel("create.item.notify.user.{$this->todoListItem->user->id}"),
+            new PrivateChannel("create.notify.item.{$this->todoListItem->id}"),
         ];
     }
 }
